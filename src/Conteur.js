@@ -3,75 +3,20 @@ import React, { Component } from 'react'
 export default class Conteur extends Component {
     constructor(){
         super();
-        this.state={
-            contr0:100,
-            contr1:200
-        }
-       
-    
-    }
-    pluss=()=>{
-        this.setState({
-            contr0 : this.state.contr0 +1
-        }
-        )
-    }
-
-
-
-
-
-
-
-
-
-moinn=()=>{
-    this.setState({
-        contr1 : this.state.contr1 -1
-    }
-    )
- 
-}
-
-reset=()=>{
-    this.setState({
-contr0 : this.state.contr0 =0
-
-    }
-    )
-}
-
-componentDidMount(){
-    console.log('ena cbn te9rit')
-    console.log(this.state.contr0)
-}
-
-
-componentDidUpdate(){
-
-    console.log('saretli update')
-    console.log(this.state.contr0)
-}
-
-
-componentWillUnmount(){
-
-    console.log('fass5ouni')
-    console.log(this.state.contr1)
-}
-
-
-
-
-  render() { 
+        
+      }
+  render() {
     return (
       <div>
-        {this.state.contr0}
-        <button onClick={()=>this.pluss()}>augmnt</button>
-        {this.state.contr1}
-        <button onClick={()=>this.moinn()} >moinnnn</button>
-       
-        <button onClick={()=>this.reset()} >init</button>
+      <div class="card-container phoenix-card">
+  <img class="avatar" src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf0200e1821b5b39f/5eb7cdc144bf8261a04d87f9/V_AGENTS_587x900_Phx.png"></img>
+  <div class="card phoenix"></div>
+</div>
+
+<div class="card-container jett-card">
+  <img class="avatar" src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltceaa6cf20d328bd5/5eb7cdc1b1f2e27c950d2aaa/V_AGENTS_587x900_Jett.png"></img>
+  <div class="card jett"></div>
+</div>
       </div>
     )
   }
